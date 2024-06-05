@@ -1,0 +1,82 @@
+==================
+binary expression &
+==================
+
+Browser & Hash
+
+---
+
+(source_file
+  (binary_expression
+    (identifier)
+    (identifier)
+  ))
+
+==================
+binary expression +
+==================
+
+Browser + Hash
+
+---
+
+(source_file
+  (binary_expression
+    (identifier)
+    (identifier)
+  ))
+
+==================
+binary expression -
+==================
+
+Browser - Hash
+
+---
+
+(source_file
+  (binary_expression
+    (identifier)
+    (identifier)
+  ))
+
+==================
+binary expression *
+==================
+
+Browser * Hash
+
+---
+
+(source_file
+  (binary_expression
+    (identifier)
+    (identifier)
+  ))
+
+==================
+binary expression combined
+==================
+
+Browser - Hash + Exp * Multi / Div % Mod
+
+---
+
+(source_file
+  (binary_expression
+    (binary_expression
+      (identifier)
+      (identifier)
+    )
+    (binary_expression
+      (binary_expression
+        (binary_expression
+          (identifier)
+          (identifier)
+        )
+        (identifier)
+      )
+      (identifier)
+    )
+  )
+)

@@ -1,0 +1,109 @@
+==================
+combined 1
+==================
+
+Browser.Domain & Browser.ExecJS("0")
+
+---
+
+(source_file
+  (binary_expression
+    (member_expression
+      (identifier)
+      (identifier)
+    )
+    (call_expression
+      (member_expression
+        (identifier)
+        (identifier)
+      )
+      (literal)
+    )
+  ))
+==================
+combined 2
+==================
+
+((Browser.Domain & Browser.ExecJS("0") & Browser.Hash) & Browser.Language)
+
+---
+
+(source_file
+  (parenthesized_expression
+    (binary_expression
+      (parenthesized_expression
+        (binary_expression
+          (binary_expression
+            (member_expression
+             (identifier)
+             (identifier)
+            )
+            (call_expression
+             (member_expression
+               (identifier)
+               (identifier)
+             )
+             (literal)
+            )
+          )
+          (member_expression
+            (identifier)
+            (identifier)
+          )
+        )
+      )
+      (member_expression
+        (identifier)
+        (identifier)
+      )
+    )
+  )
+)
+==================
+combined 3
+==================
+
+((Browser.Domain & Browser.ExecJS("0") & Browser.Hash) & Browser.Language) & Browser.QueryParam("from")
+
+---
+
+(source_file
+  (binary_expression
+    (parenthesized_expression
+      (binary_expression
+        (parenthesized_expression
+          (binary_expression
+            (binary_expression
+              (member_expression
+               (identifier)
+               (identifier)
+              )
+              (call_expression
+               (member_expression
+                 (identifier)
+                 (identifier)
+               )
+               (literal)
+              )
+            )
+            (member_expression
+              (identifier)
+              (identifier)
+            )
+          )
+        )
+        (member_expression
+          (identifier)
+          (identifier)
+        )
+      )
+    )
+    (call_expression
+      (member_expression
+        (identifier)
+        (identifier)
+      )
+      (literal)
+    )
+  )
+)
